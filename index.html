@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebView Nova - Legal Documents</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #000000;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #FFFFFF;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo-image {
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 20px;
+            display: block;
+            border-radius: 20px;
+        }
+
+        .logo {
+            font-size: 2.8em;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -1.2px;
+            color: #FFFFFF;
+        }
+
+        .tagline {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1.05em;
+            margin-bottom: 6px;
+            font-weight: 400;
+            letter-spacing: -0.2px;
+        }
+
+        .subtitle {
+            color: rgba(255, 255, 255, 0.45);
+            font-size: 0.9em;
+            font-weight: 400;
+            letter-spacing: -0.2px;
+        }
+
+        .links-card {
+            background: #000000;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 32px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .card-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+            letter-spacing: -0.4px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        a.btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 20px;
+            background: rgba(255, 255, 255, 0.08);
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 1em;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            letter-spacing: -0.3px;
+        }
+
+        a.btn:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-1px);
+        }
+
+        a.btn:active {
+            transform: translateY(0);
+        }
+
+        .btn-icon {
+            font-size: 1.2em;
+            opacity: 0.6;
+        }
+
+        .footer {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.85em;
+        }
+
+        .footer p {
+            margin-bottom: 6px;
+        }
+
+        .footer a {
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.2s;
+        }
+
+        .footer a:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Tablet styles (768px - 1024px) */
+        @media (max-width: 1024px) {
+            .logo-image {
+                width: 140px;
+                height: 140px;
+            }
+        }
+
+        /* Mobile phone styles (< 768px) */
+        @media (max-width: 768px) {
+            body {
+                padding: 16px;
+            }
+
+            .logo-image {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 16px;
+            }
+
+            .logo {
+                font-size: 2.2em;
+            }
+
+            .tagline {
+                font-size: 1em;
+            }
+
+            .subtitle {
+                font-size: 0.85em;
+            }
+
+            .links-card {
+                padding: 20px;
+            }
+
+            .card-title {
+                font-size: 1.05em;
+            }
+
+            a.btn {
+                padding: 16px 18px;
+                font-size: 0.95em;
+            }
+
+            .footer {
+                font-size: 0.8em;
+            }
+        }
+
+        /* Small mobile phones (< 480px) */
+        @media (max-width: 480px) {
+            body {
+                padding: 12px;
+            }
+
+            .logo-image {
+                width: 100px;
+                height: 100px;
+            }
+
+            .logo {
+                font-size: 1.9em;
+            }
+
+            .links-card {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <img src="Webview_Nova_Logo.png" alt="WebView Nova Logo" class="logo-image">
+            <h1 class="logo">WebView Nova</h1>
+            <p class="tagline">Experience the web in pure full-screen</p>
+            <p class="subtitle">Legal Documents & Policies</p>
+        </div>
+
+        <div class="links-card">
+            <h2 class="card-title">Legal Information</h2>
+            <div class="links">
+                <a href="privacy-policy.html" class="btn">
+                    <span>Privacy Policy</span>
+                    <span class="btn-icon">→</span>
+                </a>
+                <a href="terms-of-service.html" class="btn">
+                    <span>Terms of Service</span>
+                    <span class="btn-icon">→</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 WebView Nova. All rights reserved.</p>
+            <p><a href="mailto:ahmedd.chebbi@gmail.com">ahmedd.chebbi@gmail.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
